@@ -1,10 +1,11 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>JSP and JSTL</title>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
 </head>
 <body>
-<h1>jsp-and-jstl-exercise</h1>
-<p>Java Server Pages.</p>
+<h1>Welcome, <%= session.getAttribute("username") %>!</h1>
+<p>This is your profile page.</p>
 </body>
 </html>
