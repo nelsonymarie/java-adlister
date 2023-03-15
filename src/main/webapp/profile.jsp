@@ -1,12 +1,10 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>JSP and JSTL</title>
+    <title>Profile Page</title>
 </head>
 <body>
-<h1>jsp-and-jstl-exercise</h1>
-<p>Java Server Pages.</p>
+<h1>Welcome, <%= session.getAttribute("user") %>!</h1>
+<p>This is your profile page.</p>
+<a href="logout">Logout</a>
 </body>
 </html>
-
-
