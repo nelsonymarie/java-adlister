@@ -25,5 +25,14 @@
         <servlet-name>ViewColorServlet</servlet-name>
         <url-pattern>/viewcolor</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>com.example.MyServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/myservlet/*</url-pattern>
+    </servlet-mapping>
 
 </web-app>

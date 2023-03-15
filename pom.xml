@@ -52,6 +52,17 @@
             <artifactId>org.eclipse.core.resources</artifactId>
             <version>3.7.100</version>
         </dependency>
+                <dependency>
+                    <groupId>com.example</groupId>
+                    <artifactId>adlister-dao</artifactId>
+                    <version>1.0.0</version>
+                </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.32</version>
+        </dependency>
+
     </dependencies>
 
     <build>
