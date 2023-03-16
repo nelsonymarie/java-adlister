@@ -2,22 +2,21 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Log In or Register" />
+        <jsp:param name="title" value="Register Here!" />
     </jsp:include>
 </head>
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 <div class="container">
     <h1>Please Log In</h1>
-    <% if(request.getAttribute("loginError") != null) { %>
-    <div class="alert alert-danger" role="alert">
-        <%= request.getAttribute("loginError") %>
-    </div>
-    <% } %>
-    <form action="/login" method="POST">
+    <form action="${pageContext.request.contextPath}/register" method="POST">
         <div class="form-group">
             <label for="username">Username</label>
             <input id="username" name="username" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" class="form-control" type="email">
         </div>
         <div class="form-group">
             <label for="password">Password</label>
