@@ -22,8 +22,6 @@ public class MySQLUsersDao implements Users{
         }
     }
 
-
-
     @Override
     public String findByUsername(String username) {
         try {
